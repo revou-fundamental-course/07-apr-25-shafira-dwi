@@ -11,7 +11,188 @@
 </head>
 
 <body>
+    <!-- Header Content -->
+    <header class="main-header">
 
+        <!-- Logo -->
+        <div class="main-logo"></div>
+
+        <!-- Navigation -->
+         <nav>
+            <a href="#home-section">Home</a>
+            <a href="#our-profile-section">Our Profile</a>
+            <a href="#portfolio-section">Portfolio</a>
+            <a href="#message-us-section">Message Us</a>
+         </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home-section">
+            <header>
+
+                <h2 id="greeting">Hi Welcome to my website</h2>
+                <script>
+                    const params = new URLSearchParams (window.location.search);
+                    const nama = params.get("nama");
+                    if (nama) {
+                      document.getElementById("greeting").textContent = `Hi, ${nama}! Welcome to my website,` ;
+                    } else {
+                      document.getElementById("greeting").textContent = "Halo, tamu!";
+                    }
+                  </script>
+            </header>
+
+            <!-- Banner Content -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="banner-1"></div>
+                  <div class="numbertext">1 / 3</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="banner-2"></div>
+                  <div class="numbertext">2 / 3</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="banner-3"></div>
+                  <div class="numbertext">3 / 3</div>
+                </div>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                
+                </div>
+
+             <!-- Banner Text -->
+             <article class="section-content">
+                <p>ZIN Company</p>
+             </article>
+
+        </section>
+
+        <hr/>
+
+        <!-- Our Profile Section -->
+        <section id="our-profile-section">
+            <header>
+                <h2>Our Profile</h2>
+                <div class="locations">
+                    <div class="circle">Jakarta</div>
+                    <div class="circle">Bekasi</div>
+                    <div class="circle">Depok</div>
+                </div>
+            </header>
+
+            <!-- Our Profile Text -->
+            <article class="section-content">
+                <p>ZIN Company</p>
+             </article>
+        </section>
+
+        <hr/>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio-section">
+            <header>
+                <h2>Portfolio</h2>
+                <div class="portfolio"></div>
+            </header>
+
+            <!-- Portfolio Text -->
+            <article class="section-content">
+                <p>ZIN Company</p>
+             </article>
+        </section>
+
+        <hr
+
+        <!-- Message Us Section -->
+        <section id="message-us-section">
+            <header>
+                <h2>Message Us</h2>
+            </header>
+
+            <!-- Message Us Form -->
+            <form id="contactForm">
+                <input type="text" id="nama" placeholder="Nama"><br>
+                <input type="date" id="tanggal"><br>
+                <select id="gender">
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select><br>
+                <textarea id="pesan" placeholder="Pesan"></textarea><br>
+                <button type="submit">Kirim</button>
+              </form>
+              
+              <div id="outputContainer" class="output-box">
+                <p>Current time: <span id="currentTime"></span></p>
+                <p>Nama: <span id="outputNama"></span></p>
+                <p>Tanggal Lahir: <span id="outputTanggal"></span></p>
+                <p>Jenis Kelamin: <span id="outputGender"></span></p>
+                <p>Pesan: <span id="outputPesan"></span></p>
+              </div>
+              
+              
+              <script>
+                const form = document.getElementById("contactForm");
+                form.addEventListener("submit", function (e) {
+                  e.preventDefault();
+                  const nama = document.getElementById("nama").value;
+                  const tanggal = document.getElementById("tanggal").value;
+                  const gender = document.getElementById("gender").value;
+                  const pesan = document.getElementById("pesan").value;
+                  const timeNow = new Date().toString();
+              
+                  document.getElementById("currentTime").textContent = timeNow;
+                  document.getElementById("outputNama").textContent = nama;
+                  document.getElementById("outputTanggal").textContent = tanggal;
+                  document.getElementById("outputGender").textContent = gender;
+                  document.getElementById("outputPesan").textContent = pesan;
+                });
+              </script>
+
+        </section>
+    </main>
+
+    <hr/>
+    <!-- Footer Content -->
+     <footer>
+        <span>Made by Shafira@2025</span>
+     </footer>
+     
 </body>
 
 </html>
