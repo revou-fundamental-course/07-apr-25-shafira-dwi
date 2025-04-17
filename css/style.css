@@ -67,21 +67,11 @@ nav a {
     top: 0;
 }
 
-.text {
-    color: #f2f2f2;
-    font-size: 20px;
-    padding: 8px 12px;
-    position: absolute;
-    border-bottom: 15px;
-    width: 100%;
-    text-align: center;
-}
-
 .dot {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: pink;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -153,11 +143,17 @@ footer {
         align-items: center;
     }
 
+    nav {
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+
     .banner-1 {
         border: 1px solid;
         height: 200px;
         background-image: url(/07-apr-25-shafira-dwi/images/profile.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }  
@@ -166,7 +162,7 @@ footer {
         border: 1px solid;
         height: 200px;
         background-image: url(/07-apr-25-shafira-dwi/images/paper-craft.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }  
@@ -175,7 +171,7 @@ footer {
         border: 1px solid;
         height: 200px;
         background-image: url(/07-apr-25-shafira-dwi/images/coming-soon.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }  
@@ -184,8 +180,28 @@ footer {
         border: 1px solid;
         height: 200px;
         background-image: url(/07-apr-25-shafira-dwi/images/portfolio.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }  
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: pink;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: large;
+        color: black;
+    }
+
+    
+
 }
