@@ -1,0 +1,207 @@
+body {
+    ont-family: monospace;
+    background-color: ivory;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(/07-apr-25-shafira-dwi/images/logo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 8px;
+}
+
+.banner-1 {
+    border: 1px solid;
+    height: 400px;
+    background-image: url(/07-apr-25-shafira-dwi/images/profile.png);
+    background-size: cover;
+    background-position: center;
+}  
+
+.banner-2 {
+    border: 1px solid;
+    height: 400px;
+    background-image: url(/07-apr-25-shafira-dwi/images/paper-craft.png);
+    background-size: cover;
+    background-position: center;
+}  
+
+.banner-3 {
+    border: 1px solid;
+    height: 400px;
+    background-image: url(/07-apr-25-shafira-dwi/images/coming-soon.png);
+    background-size: cover;
+    background-position: center;
+}  
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.our-profile-section {
+    height: 300px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+.portfolio {
+    border: 1px solid;
+    height: 400px;
+    background-image: url(/07-apr-25-shafira-dwi/images/portfolio.png);
+    background-size: cover;
+    background-position: center;
+}  
+
+form {
+    gap: 10px;
+    max-width: 400px;
+}
+
+textarea, input[type="text], input[type="date] {
+    width: 100%;
+    padding; 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(245, 0, 171);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.output-box {
+    border: 2px solid;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: pink;
+    max-width: 500px;
+}
+
+.section-content {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+
+    .banner-1 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/profile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+    
+    .banner-2 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/paper-craft.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+    
+    .banner-3 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/coming-soon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+
+    .portfolio {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/portfolio.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: pink;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: large;
+        color: black;
+    }
+
+    
+
+}
