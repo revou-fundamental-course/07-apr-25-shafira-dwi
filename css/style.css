@@ -11,7 +11,7 @@ body {
 .main-logo {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200/300);
+    background-image: url(/07-apr-25-shafira-dwi/images/logo.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -144,4 +144,48 @@ button {
 
 footer {
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-1 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/profile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+    
+    .banner-2 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/paper-craft.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+    
+    .banner-3 {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/coming-soon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+
+    .portfolio {
+        border: 1px solid;
+        height: 200px;
+        background-image: url(/07-apr-25-shafira-dwi/images/portfolio.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
 }
